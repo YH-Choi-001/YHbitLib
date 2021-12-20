@@ -1,7 +1,7 @@
 #ifndef YHBITLIB_H
 #define YHBITLIB_H __DATE__ ", " __TIME__
 
-#include <stdlib.h>
+#include "../YHtypeLib/YHtypeLib.h" // for definitions of int8_t, int16_t, int32_t, int64_t, __int128_t, uint8_t, uint16_t, uint32_t, uint64_t, uint128_t
 
 /*  *  *  *  *  *  *  *  *  *  *  *  *
  *                                   *
