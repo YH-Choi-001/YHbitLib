@@ -421,7 +421,7 @@ BEGIN_CUSTOMLIB_NAMESPACE
             return (   val ^= ( (T)(1) << idx )   );
         }
 
-        #else
+        #else // #ifndef __cplusplus
         #define read_bit_from_right(val,idx) ((val>>idx)&(val-val+1))
         #define read_bit_from_left(val,idx) read_bit_from_right(val,(sizeof(val)*8-1-idx))
         #define write_bit_from_right(val,idx,bit_status) bit_status?(val|=((val-val+1)<<idx)):(val&= ~((val-val+1)<<idx))
